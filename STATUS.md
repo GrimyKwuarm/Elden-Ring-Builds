@@ -7,6 +7,7 @@
 - Added original SVG route maps with marked objectives.
 - Pushed the initial site to `origin/main`.
 - Checked the expected GitHub Pages URL; it returned 404, so Pages still needs to be enabled in repository settings.
+- Added an explicit GitHub Actions Pages deployment workflow to publish the static site from the repository root.
 
 ## Current State
 - Static site is ready for local viewing through `index.html`.
