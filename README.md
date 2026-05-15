@@ -11,6 +11,8 @@ The page includes:
 - Step-by-step route cards.
 - Checkboxes that save progress in the browser.
 - Original marked route maps.
+- Interactive atlas for flask upgrades, rune farms, dungeon detours, boss tactics, and backup gear.
+- Level-by-level stat plan from Astrologer start to level 125.
 - Wiki links for item verification.
 - A share button and GitHub Pages publishing instructions.
 
@@ -31,4 +33,3 @@ The page includes:
 - [Testing](docs/testing.md)
 - [Deployment](docs/deployment.md)
 - [Security](docs/security.md)
-

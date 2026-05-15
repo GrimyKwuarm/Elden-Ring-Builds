@@ -12,3 +12,9 @@ Conceptually, each guide step has:
 
 If more builds are added, this model can become a JSON file.
 
+Atlas markers currently live in `index.html` and include:
+- `kind`: flask, farm, detour, boss, or gear.
+- `title`: detail-card heading.
+- `body`: short instruction text.
+- `link`: external reference URL.
+- CSS coordinates: `--x` and `--y` percentages on the stylized atlas.

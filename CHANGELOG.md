@@ -5,4 +5,5 @@
 - Added a static interactive mage build guide.
 - Added original SVG route maps for Limgrave/Caelid, Liurnia/Raya Lucaria, Sellia, and Mt. Gelmir.
 - Added browser progress saving, filtering, and share-link helpers.
-
+- Added an interactive atlas with category filters for flask upgrades, rune farms, dungeon detours, boss tactics, and backup gear.
+- Added a level-by-level stat plan from level 6 to 125.

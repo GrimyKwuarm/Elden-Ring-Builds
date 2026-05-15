@@ -14,6 +14,8 @@
         <div class="navlinks">
           <a href="#route">Route</a>
           <a href="#maps">Maps</a>
+          <a href="#atlas">Atlas</a>
+          <a href="#stats">Stats</a>
           <a href="#loadout">Loadout</a>
           <a href="#publish">Share</a>
         </div>
@@ -357,6 +359,147 @@
         </figure>
       </section>
 
+      <section class="atlas" id="atlas" aria-labelledby="atlas-heading">
+        <div class="section-heading">
+          <p class="section-kicker">Interactive atlas</p>
+          <h2 id="atlas-heading">Upgrade stops, farms, detours, boss notes, and backup gear</h2>
+          <p>Use the filters, then click a marker. The map is a route aid, not a pixel-perfect world map; each card includes a wiki link when exact placement matters.</p>
+        </div>
+        <div class="atlas-tools" role="group" aria-label="Atlas filters">
+          <button class="atlas-filter active" type="button" data-atlas-filter="all">All</button>
+          <button class="atlas-filter" type="button" data-atlas-filter="flask">Flasks</button>
+          <button class="atlas-filter" type="button" data-atlas-filter="farm">Rune farms</button>
+          <button class="atlas-filter" type="button" data-atlas-filter="detour">Dungeons</button>
+          <button class="atlas-filter" type="button" data-atlas-filter="boss">Boss tactics</button>
+          <button class="atlas-filter" type="button" data-atlas-filter="gear">Backup gear</button>
+        </div>
+        <div class="atlas-layout">
+          <div class="atlas-map" aria-label="Clickable route atlas">
+            <span class="region-label limgrave">Limgrave</span>
+            <span class="region-label weeping">Weeping</span>
+            <span class="region-label liurnia">Liurnia</span>
+            <span class="region-label caelid">Caelid</span>
+            <span class="region-label altus">Altus</span>
+            <span class="region-label gelmir">Gelmir</span>
+            <button class="marker flask" style="--x: 28%; --y: 62%;" type="button" data-kind="flask" data-title="Third Church of Marika" data-body="Sacred Tear plus Flask of Wondrous Physick. Make this your first church stop after Torrent; it also positions you near the Bestial Sanctum teleporter." data-link="https://eldenring.wiki.fextralife.com/Third+Church+of+Marika">T</button>
+            <button class="marker flask" style="--x: 19%; --y: 69%;" type="button" data-kind="flask" data-title="Stormhill Shack Golden Seed" data-body="Talk to Roderika or return after she leaves. This is the easiest early flask charge upgrade on the Stormveil approach." data-link="https://eldenring.wiki.fextralife.com/Stormhill+Shack">S</button>
+            <button class="marker flask" style="--x: 34%; --y: 76%;" type="button" data-kind="flask" data-title="Fort Haight Golden Seed" data-body="Grab the seed outside Fort Haight while collecting Limgrave map progress. Low risk if you ride past the larger enemies." data-link="https://eldenring.wiki.fextralife.com/Fort+Haight">S</button>
+            <button class="marker flask" style="--x: 17%; --y: 86%;" type="button" data-kind="flask" data-title="Weeping Peninsula churches" data-body="Collect Sacred Tears from Callu Baptismal Church, Church of Pilgrimage, and Fourth Church of Marika. This is the best early survivability detour." data-link="https://eldenring.wiki.fextralife.com/Sacred+Tear">T</button>
+            <button class="marker flask" style="--x: 47%; --y: 43%;" type="button" data-kind="flask" data-title="Church of Irith" data-body="Sacred Tear immediately after entering Liurnia from Stormveil or the cliffside bypass. Easy, fast, and worth taking before Raya Lucaria." data-link="https://eldenring.wiki.fextralife.com/Church+of+Irith">T</button>
+            <button class="marker flask" style="--x: 55%; --y: 30%;" type="button" data-kind="flask" data-title="North Liurnia tears and seeds" data-body="Bellum Church and Church of Inhibition each hold Sacred Tears. Also sweep Academy Gate Town, Main Academy Gate, and the ravine route for Golden Seeds." data-link="https://eldenring.wiki.fextralife.com/Liurnia+of+the+Lakes">T</button>
+            <button class="marker flask" style="--x: 74%; --y: 50%;" type="button" data-kind="flask" data-title="Church of the Plague" data-body="Sacred Tear above Sellia. Grab it when you are already solving Sellia for Night Comet and Staff of Loss." data-link="https://eldenring.wiki.fextralife.com/Church+of+the+Plague">T</button>
+            <button class="marker flask" style="--x: 70%; --y: 61%;" type="button" data-kind="flask" data-title="Sellia and Aeonia seeds" data-body="Pick up Golden Seeds in Sellia and around the Caelid route while doing the Night Comet loop. Ride through; do not turn this into a fair fight." data-link="https://eldenring.wiki.fextralife.com/Golden+Seed">S</button>
+            <button class="marker flask" style="--x: 72%; --y: 20%;" type="button" data-kind="flask" data-title="Bestial Sanctum seed" data-body="Use the Third Church teleporter to reach Dragonbarrow, tag the grace, then loot the nearby Golden Seed if you can do it safely." data-link="https://eldenring.wiki.fextralife.com/Bestial+Sanctum">S</button>
+            <button class="marker flask" style="--x: 72%; --y: 15%;" type="button" data-kind="flask" data-title="Faroth and Greyoll setup" data-body="Fort Faroth gives the Dectus half and sits next to Greyoll. This is not a flask stop, but it connects your farm, Altus access, and later route." data-link="https://eldenring.wiki.fextralife.com/Fort+Faroth">R</button>
+            <button class="marker flask" style="--x: 63%; --y: 22%;" type="button" data-kind="flask" data-title="Altus Plateau flask sweep" data-body="After Dectus, collect the Altus Highway Junction seed, both Outer Wall phantom tree seeds, Erdtree-Gazing Hill seed, Second Church of Marika tear, and Stormcaller Church tear." data-link="https://eldenring.wiki.fextralife.com/Altus+Plateau">S</button>
+            <button class="marker flask" style="--x: 53%; --y: 16%;" type="button" data-kind="flask" data-title="Mt. Gelmir flask sweep" data-body="Take the Seethewater route for Golden Seeds and continue toward Gelmir camp. These are luxury charges for the late setup route." data-link="https://eldenring.wiki.fextralife.com/Mt.+Gelmir">S</button>
+
+            <button class="marker farm" style="--x: 29%; --y: 57%;" type="button" data-kind="farm" data-title="Gatefront practice loop" data-body="Clear Gatefront soldiers with Pebble and backstabs early. It is not the fastest farm, but it teaches spacing and funds Sellen purchases without risk." data-link="https://eldenring.wiki.fextralife.com/Gatefront+Ruins">F</button>
+            <button class="marker farm" style="--x: 73%; --y: 24%;" type="button" data-kind="farm" data-title="Vulgar Militia loop" data-body="From Bestial Sanctum or Farum Greatbridge, pick off Vulgar Militia one by one. Great early rune income if you respect their damage." data-link="https://eldenring.wiki.fextralife.com/Dragonbarrow">F</button>
+            <button class="marker farm" style="--x: 76%; --y: 17%;" type="button" data-kind="farm" data-title="Greyoll burst farm" data-body="Bleed or patiently chip Elder Dragon Greyoll near Fort Faroth for a huge one-time rune burst. Spend the runes immediately so a mistake does not sting." data-link="https://eldenring.wiki.fextralife.com/Elder+Dragon+Greyoll">F</button>
+            <button class="marker farm" style="--x: 81%; --y: 32%;" type="button" data-kind="farm" data-title="Lenne's Rise boulder" data-body="Ride downhill, bait the magic boulder off the cliff, reset at grace, repeat. Good if you want low-combat levels before Stormveil." data-link="https://eldenring.wiki.fextralife.com/Lenne's+Rise">F</button>
+            <button class="marker farm" style="--x: 58%; --y: 49%;" type="button" data-kind="farm" data-title="Liurnia Highway skirmish" data-body="Near Liurnia Highway North, enemies fight each other. This is slow but safe background rune income while you learn the region." data-link="https://eldenring.wiki.fextralife.com/Liurnia+Highway+North">F</button>
+
+            <button class="marker detour" style="--x: 31%; --y: 65%;" type="button" data-kind="detour" data-title="Limgrave Tunnels" data-body="Run this if your backup weapon needs smithing stones. Miners resist some damage types, so use magic at range and avoid being surrounded." data-link="https://eldenring.wiki.fextralife.com/Limgrave+Tunnels">D</button>
+            <button class="marker detour" style="--x: 22%; --y: 79%;" type="button" data-kind="detour" data-title="Tombsward Catacombs" data-body="Useful early spirit upgrade materials and a manageable dungeon detour before Stormveil. Bring a torch or lantern." data-link="https://eldenring.wiki.fextralife.com/Tombsward+Catacombs">D</button>
+            <button class="marker detour" style="--x: 50%; --y: 48%;" type="button" data-kind="detour" data-title="Lakeside Crystal Cave" data-body="A good Liurnia side cave if you want more levels and a natural path toward the Albinauric village area later." data-link="https://eldenring.wiki.fextralife.com/Lakeside+Crystal+Cave">D</button>
+            <button class="marker detour" style="--x: 55%; --y: 45%;" type="button" data-kind="detour" data-title="Academy Crystal Cave" data-body="Required for Terra Magica. Bring patience for Crystalians; Rock Sling helps once they crack." data-link="https://eldenring.wiki.fextralife.com/Academy+Crystal+Cave">D</button>
+            <button class="marker detour" style="--x: 65%; --y: 57%;" type="button" data-kind="detour" data-title="Gael Tunnel" data-body="Optional Moonveil detour. Magma Wyrm can be rough early, but the reward is an excellent Intelligence backup weapon." data-link="https://eldenring.wiki.fextralife.com/Gael+Tunnel">D</button>
+
+            <button class="marker boss" style="--x: 26%; --y: 50%;" type="button" data-kind="boss" data-title="Margit tactic" data-body="Use Rock Sling from mid range, roll through delayed swings, and cast after dagger throws or big leaping recoveries. Summon Rogier if you want breathing room." data-link="https://eldenring.wiki.fextralife.com/Margit,+The+Fell+Omen">B</button>
+            <button class="marker boss" style="--x: 28%; --y: 45%;" type="button" data-kind="boss" data-title="Godrick tactic" data-body="Rock Sling for stance breaks, Slicer during punish windows, and back away when phase two fire starts. Do not cast into wind-up storms." data-link="https://eldenring.wiki.fextralife.com/Godrick+the+Grafted">B</button>
+            <button class="marker boss" style="--x: 55%; --y: 39%;" type="button" data-kind="boss" data-title="Rennala tactic" data-body="Phase one is mechanics. Phase two resists magic, so Rock Sling and Slicer are your friends. Sprint sideways through beams and punish summons ending." data-link="https://eldenring.wiki.fextralife.com/Rennala+Queen+of+the+Full+Moon">B</button>
+            <button class="marker boss" style="--x: 75%; --y: 55%;" type="button" data-kind="boss" data-title="Sellia survival tactic" data-body="Fight on rooftops only when needed. Most of Sellia is a stealth-and-loot problem, not a duel. Tag the grace and unlock seals before exploring." data-link="https://eldenring.wiki.fextralife.com/Sellia,+Town+of+Sorcery">B</button>
+            <button class="marker boss" style="--x: 55%; --y: 44%;" type="button" data-kind="boss" data-title="Crystalian tactic" data-body="Crystalians take poor damage until their stance breaks. Rock Sling, jumping attacks with a strike backup, or patient Slicer pressure will crack them." data-link="https://eldenring.wiki.fextralife.com/Crystalians">B</button>
+
+            <button class="marker gear" style="--x: 35%; --y: 61%;" type="button" data-kind="gear" data-title="Brass Shield backup" data-body="Farm Gatefront soldiers if you want a sturdy shield for panic moments. You can still be a mage; sometimes a shield just buys dignity." data-link="https://eldenring.wiki.fextralife.com/Brass+Shield">G</button>
+            <button class="marker gear" style="--x: 42%; --y: 53%;" type="button" data-kind="gear" data-title="Lazuli Glintstone Sword" data-body="A thematic Intelligence sword from Academy enemies. Not mandatory, but it fits the spellblade fantasy if Carian Slicer is not enough." data-link="https://eldenring.wiki.fextralife.com/Lazuli+Glintstone+Sword">G</button>
+            <button class="marker gear" style="--x: 57%; --y: 35%;" type="button" data-kind="gear" data-title="Carian Knight Sword" data-body="Found in a carriage chest in northwest Liurnia. Easy backup weapon for an Intelligence build without committing to Moonveil." data-link="https://eldenring.wiki.fextralife.com/Carian+Knight's+Sword">G</button>
+            <button class="marker gear" style="--x: 65%; --y: 57%;" type="button" data-kind="gear" data-title="Moonveil" data-body="Optional high-power katana from Gael Tunnel. Requires Dexterity investment, so use it only if you want a hybrid caster-melee route." data-link="https://eldenring.wiki.fextralife.com/Moonveil">G</button>
+            <button class="marker gear" style="--x: 53%; --y: 28%;" type="button" data-kind="gear" data-title="Carian Regal Scepter later" data-body="After Rennala, her remembrance can become a top-tier staff once your Intelligence is high. Do not rush it before upgrade materials support it." data-link="https://eldenring.wiki.fextralife.com/Carian+Regal+Scepter">G</button>
+          </div>
+          <aside class="atlas-card" aria-live="polite">
+            <p class="section-kicker" id="atlasKind">Pick a marker</p>
+            <h3 id="atlasTitle">Click anything on the atlas</h3>
+            <p id="atlasBody">Markers are grouped by flasks, rune farms, dungeons, boss tactics, and backup gear. Your selected marker details will appear here.</p>
+            <a id="atlasLink" href="https://eldenring.wiki.fextralife.com/Elden+Ring+Wiki" target="_blank" rel="noreferrer">Open reference</a>
+          </aside>
+        </div>
+
+        <div class="deep-lists">
+          <article>
+            <h3>Flask sweep checklist</h3>
+            <ul>
+              <li>Sacred Tears: Third Church, Callu Baptismal, Pilgrimage, Fourth Church, Irith, Bellum, Inhibition, Plague, Second Church, Stormcaller, Repose, First Church.</li>
+              <li>Golden Seeds: keepsake, Stormhill Shack, Fort Haight, Mistwood, Stormveil, Academy Gate Town, Main Academy Gate, Liurnia ravine, Sellia, Bestial Sanctum, Altus Highway, Outer Wall, Erdtree-Gazing Hill, Seethewater, Gelmir camp.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Farm ladder</h3>
+            <ul>
+              <li>Levels 10-25: Gatefront practice or Lenne's Rise boulder if you want safety.</li>
+              <li>Levels 25-55: Vulgar Militia in Dragonbarrow, plus Greyoll as a one-time boost.</li>
+              <li>Levels 55+: Liurnia/Altus dungeons, then Palace Approach later if you naturally unlock Mohgwyn.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Detour priority</h3>
+            <ul>
+              <li>Survival first: Weeping churches before Stormveil.</li>
+              <li>Power first: Meteorite Staff, Rock Sling, Carian Slicer.</li>
+              <li>Style first: Academy Crystal Cave for Terra Magica, Gael Tunnel for Moonveil, Sellia for Night Comet.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="stats" id="stats" aria-labelledby="stats-heading">
+        <div class="section-heading">
+          <p class="section-kicker">Level plan</p>
+          <h2 id="stats-heading">Level-by-level stat plan</h2>
+          <p>Astrologer starts at level 6 with 9 Vigor, 15 Mind, 9 Endurance, 8 Strength, 12 Dexterity, 16 Intelligence, 7 Faith, and 9 Arcane. This plan favors comfort first, then damage.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Level</th>
+                <th>Vigor</th>
+                <th>Mind</th>
+                <th>End</th>
+                <th>Str</th>
+                <th>Dex</th>
+                <th>Int</th>
+                <th>Why it matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>6</td><td>9</td><td>15</td><td>9</td><td>8</td><td>12</td><td>16</td><td>Astrologer baseline. Play safe until Torrent and Sellen are online.</td></tr>
+              <tr><td>15</td><td>16</td><td>16</td><td>9</td><td>8</td><td>12</td><td>17</td><td>Early Vigor keeps the build from folding while you sprint for gear.</td></tr>
+              <tr><td>25</td><td>20</td><td>17</td><td>10</td><td>8</td><td>12</td><td>22</td><td>Enough Intelligence for stronger spell scaling while still surviving Limgrave.</td></tr>
+              <tr><td>35</td><td>25</td><td>18</td><td>10</td><td>8</td><td>12</td><td>26</td><td>Comfortable Stormveil target. Rock Sling and Slicer carry damage.</td></tr>
+              <tr><td>45</td><td>28</td><td>20</td><td>11</td><td>8</td><td>12</td><td>32</td><td>Raya Lucaria feels better with more FP and enough Vigor for mistakes.</td></tr>
+              <tr><td>55</td><td>30</td><td>22</td><td>12</td><td>8</td><td>12</td><td>40</td><td>Midgame caster breakpoint. Night Comet starts feeling excellent.</td></tr>
+              <tr><td>65</td><td>35</td><td>24</td><td>12</td><td>8</td><td>12</td><td>45</td><td>More health for Caelid and Altus. Upgrade Staff of Loss if using Night Comet.</td></tr>
+              <tr><td>75</td><td>38</td><td>26</td><td>13</td><td>8</td><td>12</td><td>52</td><td>Damage climbs without making the build too fragile.</td></tr>
+              <tr><td>85</td><td>40</td><td>28</td><td>14</td><td>8</td><td>12</td><td>60</td><td>Great Comet Azur and late sorcery threshold. Use Terra Magica setups here.</td></tr>
+              <tr><td>100</td><td>45</td><td>30</td><td>15</td><td>8</td><td>12</td><td>70</td><td>Strong late build. Push toward 80 Intelligence only after health feels safe.</td></tr>
+              <tr><td>125</td><td>50</td><td>35</td><td>18</td><td>8</td><td>12</td><td>80</td><td>Endgame mage. Extra points can go Vigor, Mind, Endurance, or Dexterity for Moonveil.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="stat-notes">
+          <article>
+            <h3>If you choose Moonveil</h3>
+            <p>Raise Strength to 12 and Dexterity to 18, usually after level 45. Take those points from Intelligence temporarily, then respec after Rennala if it feels messy.</p>
+          </article>
+          <article>
+            <h3>If you keep pure caster</h3>
+            <p>Leave Strength and Dexterity alone. Put spare levels into Vigor until 40, Intelligence until 60, then Mind and Intelligence depending on whether you need casts or damage.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="loadout" id="loadout" aria-labelledby="loadout-heading">
         <div class="section-heading">
           <p class="section-kicker">Final feel</p>
@@ -406,4 +549,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-

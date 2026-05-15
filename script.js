@@ -6,8 +6,21 @@
   const steps = Array.from(document.querySelectorAll(".step"));
   const mapTabs = Array.from(document.querySelectorAll("[data-map]"));
   const mapPanels = Array.from(document.querySelectorAll(".map-panel"));
+  const atlasFilters = Array.from(document.querySelectorAll("[data-atlas-filter]"));
+  const markers = Array.from(document.querySelectorAll(".marker"));
+  const atlasKind = document.getElementById("atlasKind");
+  const atlasTitle = document.getElementById("atlasTitle");
+  const atlasBody = document.getElementById("atlasBody");
+  const atlasLink = document.getElementById("atlasLink");
   const copyLink = document.getElementById("copyLink");
   const storageKey = "starfall-spellblade-progress";
+  const kindLabels = {
+    flask: "Flask upgrade",
+    farm: "Rune farm",
+    detour: "Dungeon detour",
+    boss: "Boss tactic",
+    gear: "Backup gear",
+  };
 
   function readProgress() {
     try {
@@ -68,6 +81,27 @@
     });
   });
 
+  markers.forEach((marker) => {
+    marker.addEventListener("click", () => {
+      markers.forEach((item) => item.classList.toggle("active", item === marker));
+      atlasKind.textContent = kindLabels[marker.dataset.kind] || "Atlas marker";
+      atlasTitle.textContent = marker.dataset.title;
+      atlasBody.textContent = marker.dataset.body;
+      atlasLink.href = marker.dataset.link;
+      atlasLink.textContent = "Open reference";
+    });
+  });
+
+  atlasFilters.forEach((filter) => {
+    filter.addEventListener("click", () => {
+      const kind = filter.dataset.atlasFilter;
+      atlasFilters.forEach((item) => item.classList.toggle("active", item === filter));
+      markers.forEach((marker) => {
+        marker.hidden = kind !== "all" && marker.dataset.kind !== kind;
+      });
+    });
+  });
+
   if (copyLink) {
     copyLink.addEventListener("click", async () => {
       const url = window.location.href.split("#")[0];
@@ -83,4 +117,3 @@
     });
   }
 })();
-
