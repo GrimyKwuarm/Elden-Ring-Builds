@@ -16,7 +16,7 @@
   const copyMapSearch = document.getElementById("copyMapSearch");
   const copyLink = document.getElementById("copyLink");
   const storageKey = "starfall-spellblade-progress";
-  const mapUrl = "https://eldenring.wiki.fextralife.com/Interactive+Map";
+  const mapUrl = "https://mapgenie.io/elden-ring/maps/the-lands-between";
   let currentMapSearch = "Elden Ring mage build";
   const kindLabels = {
     flask: "Flask upgrade",

@@ -333,14 +333,23 @@
         <div class="section-heading">
           <p class="section-kicker">Marked maps</p>
           <h2 id="maps-heading">Where to go</h2>
-          <p>These are original route maps with marked objectives. For the actual pan-and-zoom Elden Ring map, use the Fextralife live map launcher below.</p>
+          <p>Use the embedded Map Genie map for the actual pan-and-zoom world map, then use the custom route maps and atlas markers for this build's recommended stops.</p>
         </div>
         <div class="live-map-callout">
           <div>
-            <h3>Use the actual Fextralife interactive map</h3>
-            <p>Fextralife blocks cross-site embedding, so the guide opens their live map in a new tab. Pick any atlas marker below, copy its search term, then paste it into the Fextralife map search.</p>
+            <h3>Actual interactive Elden Ring map</h3>
+            <p>Embedded via Map Genie. If the frame feels cramped on mobile, open it full-size in a new tab and use the atlas marker search terms below.</p>
           </div>
-          <a class="button primary" href="https://eldenring.wiki.fextralife.com/Interactive+Map" target="_blank" rel="noreferrer">Open Fextralife map</a>
+          <a class="button primary" href="https://mapgenie.io/elden-ring/maps/the-lands-between" target="_blank" rel="noreferrer">Open full map</a>
+        </div>
+        <div class="embedded-map">
+          <iframe
+            title="Map Genie Elden Ring interactive map"
+            src="https://mapgenie.io/elden-ring/maps/the-lands-between"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
         </div>
         <div class="map-tabs" role="tablist" aria-label="Route maps">
           <button class="map-tab active" type="button" role="tab" aria-selected="true" aria-controls="map-caelid" data-map="map-caelid">Early power</button>
@@ -431,7 +440,7 @@
             <p id="atlasBody">Markers are grouped by flasks, rune farms, dungeons, boss tactics, and backup gear. Your selected marker details will appear here.</p>
             <div class="atlas-actions">
               <a id="atlasLink" href="https://eldenring.wiki.fextralife.com/Elden+Ring+Wiki" target="_blank" rel="noreferrer">Open reference</a>
-              <a id="atlasMapLink" href="https://eldenring.wiki.fextralife.com/Interactive+Map" target="_blank" rel="noreferrer">Open live map</a>
+              <a id="atlasMapLink" href="https://mapgenie.io/elden-ring/maps/the-lands-between" target="_blank" rel="noreferrer">Open live map</a>
               <button id="copyMapSearch" type="button">Copy map search</button>
             </div>
           </aside>

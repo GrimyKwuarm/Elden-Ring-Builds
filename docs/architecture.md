@@ -6,7 +6,7 @@ The site is a static GitHub Pages-ready guide.
 - `index.html`: content, structure, route cards, source links, and map references.
 - `styles.css`: responsive visual design.
 - `script.js`: checklist persistence, filtering, map tabs, and share helper.
-- External live map: the guide links to Fextralife's interactive map instead of embedding it because the source page sends same-origin frame protection.
+- External live map: the guide embeds Map Genie's Elden Ring interactive map in an iframe. Fextralife, Game8, and Gamepressure were avoided for embedding because they send same-origin frame protection.
 - `assets/maps/*.svg`: original marked route maps.
 
 ## Data Model

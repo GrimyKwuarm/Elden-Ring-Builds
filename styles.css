@@ -361,6 +361,24 @@ footer p {
   color: var(--muted);
 }
 
+.embedded-map {
+  height: min(78vh, 780px);
+  min-height: 560px;
+  margin-bottom: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0b0e0b;
+  box-shadow: var(--shadow);
+}
+
+.embedded-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .atlas-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
