@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Stylized marked route through Liurnia and Raya Lucaria">
+  <rect width="1600" height="900" fill="#0e1718"/>
+  <path d="M180 750 C290 445 470 245 760 140 C1080 230 1290 440 1445 740 C1090 830 680 825 180 750 Z" fill="#284851" stroke="#82b6bf" stroke-width="4"/>
+  <path d="M720 245 C810 230 888 272 920 355 C940 440 890 530 794 548 C704 565 620 508 600 420 C580 330 632 266 720 245 Z" fill="#30353c" stroke="#dfb85a" stroke-width="5"/>
+  <path d="M420 620 C560 580 665 520 760 430 C830 360 900 355 1030 385" fill="none" stroke="#dfb85a" stroke-width="10" stroke-linecap="round" stroke-dasharray="22 18"/>
+  <path d="M760 430 C705 500 648 572 560 660" fill="none" stroke="#7f9c68" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif" fill="#f1f0e8">
+    <text x="190" y="122" font-size="34" font-weight="700">Liurnia of the Lakes</text>
+    <text x="645" y="410" font-size="28" font-weight="700">Raya Lucaria</text>
+  </g>
+  <g>
+    <circle cx="420" cy="620" r="26" fill="#dfb85a" stroke="#17130b" stroke-width="6"/>
+    <text x="420" y="632" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#17130b">1</text>
+    <text x="260" y="585" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Academy key behind Smarag</text>
+  </g>
+  <g>
+    <circle cx="760" cy="430" r="26" fill="#82b6bf" stroke="#102124" stroke-width="6"/>
+    <text x="760" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#102124">2</text>
+    <text x="790" y="472" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Debate Parlor talismans</text>
+  </g>
+  <g>
+    <circle cx="1030" cy="385" r="26" fill="#dfb85a" stroke="#17130b" stroke-width="6"/>
+    <text x="1030" y="397" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#17130b">3</text>
+    <text x="1060" y="350" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Rennala</text>
+  </g>
+  <g>
+    <circle cx="560" cy="660" r="26" fill="#7f9c68" stroke="#17200f" stroke-width="6"/>
+    <text x="560" y="672" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#17200f">4</text>
+    <text x="590" y="704" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Academy Crystal Cave</text>
+  </g>
+  <text x="80" y="858" font-family="Arial, sans-serif" font-size="24" fill="#c4c3b5">Marked objectives: key, Academy entry, talismans, Rennala, optional Terra Magica cave.</text>
+</svg>
+

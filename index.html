@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A step-by-step Elden Ring mage route from a new save: early gravity magic, Carian Slicer, Night Comet, and late-game spell nukes.">
+    <title>Starfall Spellblade - Elden Ring Mage Build</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="topbar" aria-label="Guide navigation">
+        <a class="brand" href="#top">Starfall Spellblade</a>
+        <div class="navlinks">
+          <a href="#route">Route</a>
+          <a href="#maps">Maps</a>
+          <a href="#loadout">Loadout</a>
+          <a href="#publish">Share</a>
+        </div>
+      </nav>
+      <div class="hero-inner">
+        <p class="eyebrow">Fresh save mage route</p>
+        <h1>Become a gravity-slinging, sword-slicing night mage without needing a perfect run.</h1>
+        <p class="lede">Start as Astrologer, grab the Meteorite Staff and Rock Sling early, add Carian Slicer for close fights, then graduate into Night Comet and boss-melting setup spells.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#route">Start the route</a>
+          <button class="button ghost" id="copyLink" type="button">Copy guide link</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="overview" aria-labelledby="overview-heading">
+        <div>
+          <p class="section-kicker">Build identity</p>
+          <h2 id="overview-heading">Fast spells, big staggers, sneaky nukes.</h2>
+        </div>
+        <div class="overview-grid">
+          <article>
+            <h3>Starting class</h3>
+            <p>Astrologer is the smoothest start: high Intelligence, early staff, and enough Mind to cast comfortably.</p>
+          </article>
+          <article>
+            <h3>Main stats</h3>
+            <p>Vigor first, then Intelligence and Mind. Aim for 25 Vigor before you get greedy with damage.</p>
+          </article>
+          <article>
+            <h3>Core loop</h3>
+            <p>Open with Rock Sling for stance pressure, punish close enemies with Carian Slicer, and use Night Comet when enemies dodge normal casts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Route controls">
+        <div>
+          <p class="section-kicker">Progress</p>
+          <h2>Track each stop</h2>
+        </div>
+        <div class="progress-wrap" aria-live="polite">
+          <div class="progress-bar"><span id="progressFill"></span></div>
+          <span id="progressText">0 of 0 complete</span>
+        </div>
+        <div class="filters" role="group" aria-label="Filter route steps">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="early">Early power</button>
+          <button class="filter" type="button" data-filter="academy">Academy</button>
+          <button class="filter" type="button" data-filter="night">Night mage</button>
+          <button class="filter" type="button" data-filter="late">Late spike</button>
+        </div>
+      </section>
+
+      <section class="route" id="route" aria-labelledby="route-heading">
+        <div class="section-heading">
+          <p class="section-kicker">Step by step</p>
+          <h2 id="route-heading">The route</h2>
+        </div>
+
+        <article class="step" data-phase="early">
+          <label class="checkline">
+            <input type="checkbox" data-step="01-start">
+            <span>01</span>
+          </label>
+          <div>
+            <h3>Start Astrologer and set your early rules</h3>
+            <p>Choose Astrologer, take Golden Seed as your keepsake, and keep the Short Sword as a backup only. Spend early levels on Vigor until survival feels stable, then push Intelligence and Mind.</p>
+            <ul>
+              <li>Target early stats: 20 Vigor, 18 Intelligence, 15 Mind.</li>
+              <li>Keep distance, cast Glintstone Pebble, and save flasks for mistakes instead of trading hits.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Astrologer" target="_blank" rel="noreferrer">Astrologer wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Glintstone+Pebble" target="_blank" rel="noreferrer">Glintstone Pebble wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="early">
+          <label class="checkline">
+            <input type="checkbox" data-step="02-torrent">
+            <span>02</span>
+          </label>
+          <div>
+            <h3>Unlock Torrent and the basic toolkit</h3>
+            <p>Rest at Gatefront to meet Melina and get Torrent. Collect the map fragment at Gatefront Ruins, then gather nearby Golden Seeds and Sacred Tears before fighting anything dramatic.</p>
+            <ul>
+              <li>Goal: 4 or more flasks before the Caelid item sprint.</li>
+              <li>Buy a crafting kit if you want sleep pots later, but this route does not require them.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Gatefront+Ruins" target="_blank" rel="noreferrer">Gatefront Ruins wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Flask+of+Wondrous+Physick" target="_blank" rel="noreferrer">Physick flask wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="early">
+          <label class="checkline">
+            <input type="checkbox" data-step="03-sellen">
+            <span>03</span>
+          </label>
+          <div>
+            <h3>Meet Sellen at Waypoint Ruins</h3>
+            <p>Clear the Waypoint Ruins cellar boss and unlock Sorceress Sellen. She becomes your early spell shop and later accepts the Royal House Scroll for Carian Slicer.</p>
+            <ul>
+              <li>Use Pebble at range; do not stand in poison flowers.</li>
+              <li>After unlocking Sellen, buy any cheap spell that fits your style, but save runes for Carian Slicer.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Sorceress+Sellen" target="_blank" rel="noreferrer">Sellen wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Waypoint+Ruins" target="_blank" rel="noreferrer">Waypoint Ruins wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step power" data-phase="early">
+          <label class="checkline">
+            <input type="checkbox" data-step="04-meteorite">
+            <span>04</span>
+          </label>
+          <div>
+            <h3>Steal the Meteorite Staff and Rock Sling</h3>
+            <p>Take the Dragon-Burnt Ruins trap chest to Sellia Crystal Tunnel, escape outside, then ride southwest to Street of Sages Ruins. Grab Meteorite Staff from the ruined building and Rock Sling from the nearby cellar.</p>
+            <ul>
+              <li>Do this as a sprint, not a fight. Caelid hits hard early.</li>
+              <li>Meteorite Staff cannot be upgraded, but its early scaling is absurdly useful.</li>
+              <li>Rock Sling deals physical damage and staggers bosses beautifully.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Meteorite+Staff" target="_blank" rel="noreferrer">Meteorite Staff wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Rock+Sling" target="_blank" rel="noreferrer">Rock Sling wiki</a>
+              <a href="#map-caelid">Marked map</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="early">
+          <label class="checkline">
+            <input type="checkbox" data-step="05-slicer">
+            <span>05</span>
+          </label>
+          <div>
+            <h3>Pick up Royal House Scroll and buy Carian Slicer</h3>
+            <p>Find the Royal House Scroll in southern Limgrave, give it to Sellen, then buy Carian Slicer. This turns the build from "wizard with a pebble" into a close-range blender.</p>
+            <ul>
+              <li>Use Slicer on wolves, miners, soldiers, and anything that keeps closing distance.</li>
+              <li>Keep Rock Sling for shielded enemies, large enemies, and bosses.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Royal+House+Scroll" target="_blank" rel="noreferrer">Royal House Scroll wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Carian+Slicer" target="_blank" rel="noreferrer">Carian Slicer wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="academy">
+          <label class="checkline">
+            <input type="checkbox" data-step="06-margit-godrick">
+            <span>06</span>
+          </label>
+          <div>
+            <h3>Beat Margit and Godrick when you feel stable</h3>
+            <p>Rock Sling makes both fights friendlier because it can break stance from a safe range. Summons are completely fine; this build is about having fun, not auditioning for a no-hit montage.</p>
+            <ul>
+              <li>Recommended before Stormveil: around 25 Vigor and 25 Intelligence.</li>
+              <li>After Godrick, move through Liurnia toward Raya Lucaria.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Margit,+The+Fell+Omen" target="_blank" rel="noreferrer">Margit wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Godrick+the+Grafted" target="_blank" rel="noreferrer">Godrick wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="academy">
+          <label class="checkline">
+            <input type="checkbox" data-step="07-key">
+            <span>07</span>
+          </label>
+          <div>
+            <h3>Sneak the Academy Glintstone Key</h3>
+            <p>Ride to the island west of Raya Lucaria and loot the key behind Glintstone Dragon Smarag. You can grab it without fighting the dragon if you stay calm and keep moving.</p>
+            <ul>
+              <li>Enter the Academy through South Raya Lucaria Gate.</li>
+              <li>Mark nearby Sites of Grace so you can recover easily if the lake gets messy.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Academy+Glintstone+Key" target="_blank" rel="noreferrer">Academy key wiki</a>
+              <a href="#map-liurnia">Marked map</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="academy">
+          <label class="checkline">
+            <input type="checkbox" data-step="08-talismans">
+            <span>08</span>
+          </label>
+          <div>
+            <h3>Collect Academy caster talismans</h3>
+            <p>After reaching the Debate Parlor area, grab Radagon Icon for faster casting and Graven-School Talisman for more sorcery damage. These stay useful for a long time.</p>
+            <ul>
+              <li>Radagon Icon is in a chest above the Debate Parlor route.</li>
+              <li>Graven-School Talisman is behind the Academy illusory-wall route.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Radagon+Icon" target="_blank" rel="noreferrer">Radagon Icon wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Graven-School+Talisman" target="_blank" rel="noreferrer">Graven-School Talisman wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="academy">
+          <label class="checkline">
+            <input type="checkbox" data-step="09-rennala">
+            <span>09</span>
+          </label>
+          <div>
+            <h3>Defeat Rennala and respec cleanly</h3>
+            <p>Rennala resists magic, so lean on Rock Sling, Carian Slicer, and summons if needed. Afterward, respec if your stats wandered.</p>
+            <ul>
+              <li>Comfortable midgame target: 30 Vigor, 30 to 40 Intelligence, 20 Mind.</li>
+              <li>Keep enough Endurance only for your preferred armor and talismans.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Rennala+Queen+of+the+Full+Moon" target="_blank" rel="noreferrer">Rennala wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Rebirth" target="_blank" rel="noreferrer">Respec wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step power" data-phase="night">
+          <label class="checkline">
+            <input type="checkbox" data-step="10-night-comet">
+            <span>10</span>
+          </label>
+          <div>
+            <h3>Turn into a Sellian night mage</h3>
+            <p>Return to Caelid and solve Sellia, Town of Sorcery by lighting the towers. Loot Night Comet and Staff of Loss. Staff of Loss boosts invisibility sorceries, and Night Comet is excellent because many enemies do not dodge it like normal projectiles.</p>
+            <ul>
+              <li>Use Meteorite Staff for gravity spells and Staff of Loss for Night Comet once upgraded.</li>
+              <li>Carry both if your equip load allows it.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Night+Comet" target="_blank" rel="noreferrer">Night Comet wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Staff+of+Loss" target="_blank" rel="noreferrer">Staff of Loss wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Sellia,+Town+of+Sorcery" target="_blank" rel="noreferrer">Sellia wiki</a>
+              <a href="#map-sellia">Marked map</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="night">
+          <label class="checkline">
+            <input type="checkbox" data-step="11-tear">
+            <span>11</span>
+          </label>
+          <div>
+            <h3>Add Magic-Shrouding Cracked Tear</h3>
+            <p>Defeat the Erdtree Avatar at the northeastern Liurnia Minor Erdtree to get a Physick tear that boosts magic damage. Drink it before boss openings, then cast your highest-value spells.</p>
+            <ul>
+              <li>Pair it with a defensive tear while learning fights.</li>
+              <li>Once confident, swap to more damage or FP support.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Magic-Shrouding+Cracked+Tear" target="_blank" rel="noreferrer">Magic-Shrouding Tear wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="late">
+          <label class="checkline">
+            <input type="checkbox" data-step="12-terra">
+            <span>12</span>
+          </label>
+          <div>
+            <h3>Optional: unlock Terra Magica</h3>
+            <p>Clear Academy Crystal Cave west of Raya Lucaria, beat the Crystalians, ride the elevator up, and loot Terra Magica. It creates a magic-damage zone for boss setups and big openings.</p>
+            <ul>
+              <li>Bring a strike weapon or use spells carefully against Crystalians.</li>
+              <li>Best use: pre-cast before a boss crosses the arena or after a stance break.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Terra+Magica" target="_blank" rel="noreferrer">Terra Magica wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Academy+Crystal+Cave" target="_blank" rel="noreferrer">Academy Crystal Cave wiki</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="step" data-phase="late">
+          <label class="checkline">
+            <input type="checkbox" data-step="13-azur">
+            <span>13</span>
+          </label>
+          <div>
+            <h3>Optional: build the giant laser button</h3>
+            <p>When you reach Mt. Gelmir, find Primeval Sorcerer Azur for Comet Azur and defeat the Mt. Gelmir Ulcerated Tree Spirit for Cerulean Hidden Tear. This is the classic "stand in Terra Magica and delete a health bar" setup.</p>
+            <ul>
+              <li>This is optional and later than the core build.</li>
+              <li>Use Night Comet and Rock Sling for regular play; save the laser for openings that deserve theater.</li>
+            </ul>
+            <div class="links">
+              <a href="https://eldenring.wiki.fextralife.com/Comet+Azur" target="_blank" rel="noreferrer">Comet Azur wiki</a>
+              <a href="https://eldenring.wiki.fextralife.com/Cerulean+Hidden+Tear" target="_blank" rel="noreferrer">Cerulean Hidden Tear wiki</a>
+              <a href="#map-gelmir">Marked map</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="maps" id="maps" aria-labelledby="maps-heading">
+        <div class="section-heading">
+          <p class="section-kicker">Marked maps</p>
+          <h2 id="maps-heading">Where to go</h2>
+          <p>These are original route maps with marked objectives. Use the linked wiki pages when you need exact in-game geometry.</p>
+        </div>
+        <div class="map-tabs" role="tablist" aria-label="Route maps">
+          <button class="map-tab active" type="button" role="tab" aria-selected="true" aria-controls="map-caelid" data-map="map-caelid">Early power</button>
+          <button class="map-tab" type="button" role="tab" aria-selected="false" aria-controls="map-liurnia" data-map="map-liurnia">Academy</button>
+          <button class="map-tab" type="button" role="tab" aria-selected="false" aria-controls="map-sellia" data-map="map-sellia">Sellia</button>
+          <button class="map-tab" type="button" role="tab" aria-selected="false" aria-controls="map-gelmir" data-map="map-gelmir">Late spike</button>
+        </div>
+        <figure class="map-panel active" id="map-caelid" role="tabpanel">
+          <img src="assets/maps/limgrave-caelid-route.svg" alt="Marked route from Limgrave to Caelid showing Dragon-Burnt Ruins, Sellia Crystal Tunnel, and Street of Sages Ruins.">
+          <figcaption>Early power route: trap chest, escape, ride to Street of Sages, loot staff and spell.</figcaption>
+        </figure>
+        <figure class="map-panel" id="map-liurnia" role="tabpanel" hidden>
+          <img src="assets/maps/liurnia-academy-route.svg" alt="Marked Liurnia route showing Academy Glintstone Key, South Raya Lucaria Gate, Debate Parlor, and Academy Crystal Cave.">
+          <figcaption>Academy route: sneak the key, enter Raya Lucaria, collect caster talismans, and optionally unlock Terra Magica.</figcaption>
+        </figure>
+        <figure class="map-panel" id="map-sellia" role="tabpanel" hidden>
+          <img src="assets/maps/sellia-night-route.svg" alt="Marked Sellia route showing three towers, Night Comet chest, and Staff of Loss rooftop.">
+          <figcaption>Night mage route: light Sellia towers, then pick up Night Comet and Staff of Loss.</figcaption>
+        </figure>
+        <figure class="map-panel" id="map-gelmir" role="tabpanel" hidden>
+          <img src="assets/maps/gelmir-late-route.svg" alt="Marked Mt. Gelmir route showing Primeval Sorcerer Azur and the Minor Erdtree for Cerulean Hidden Tear.">
+          <figcaption>Late spike route: Comet Azur plus Cerulean Hidden Tear for the dramatic boss opener.</figcaption>
+        </figure>
+      </section>
+
+      <section class="loadout" id="loadout" aria-labelledby="loadout-heading">
+        <div class="section-heading">
+          <p class="section-kicker">Final feel</p>
+          <h2 id="loadout-heading">Suggested loadout</h2>
+        </div>
+        <div class="loadout-grid">
+          <article>
+            <h3>Weapons</h3>
+            <p>Meteorite Staff for Rock Sling. Staff of Loss for Night Comet once upgraded. Keep a light melee backup if you like, but Carian Slicer usually covers that job.</p>
+          </article>
+          <article>
+            <h3>Spells</h3>
+            <p>Rock Sling, Carian Slicer, Night Comet, Glintstone Pebble or Great Glintstone Shard, Terra Magica, and Comet Azur if you take the late route.</p>
+          </article>
+          <article>
+            <h3>Talismans</h3>
+            <p>Radagon Icon, Graven-School Talisman, Green Turtle Talisman for comfort, and any defensive talisman while learning bosses.</p>
+          </article>
+          <article>
+            <h3>Physick</h3>
+            <p>Magic-Shrouding Cracked Tear plus a defensive tear for exploration. Swap in Cerulean Hidden Tear when using Comet Azur setups.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="publish" id="publish" aria-labelledby="publish-heading">
+        <div>
+          <p class="section-kicker">Shareable link</p>
+          <h2 id="publish-heading">Publish with GitHub Pages</h2>
+          <p>After this repo is pushed, enable GitHub Pages from the repository root. The public link will look like this:</p>
+          <code>https://grimykwuarm.github.io/Elden-Ring-Builds/</code>
+        </div>
+        <ol>
+          <li>Push the files to GitHub.</li>
+          <li>Open repository Settings, then Pages.</li>
+          <li>Choose "Deploy from a branch", select the default branch, and use `/root`.</li>
+          <li>Share the Pages URL once GitHub finishes publishing.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>Fan-made route guide. Elden Ring belongs to FromSoftware and Bandai Namco. Wiki links open external references.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

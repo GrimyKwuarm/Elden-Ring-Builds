@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Stylized marked route in Sellia Town of Sorcery">
+  <rect width="1600" height="900" fill="#17100f"/>
+  <path d="M230 130 L1270 120 L1390 740 L190 760 Z" fill="#63392f" stroke="#b46f4f" stroke-width="4"/>
+  <path d="M340 640 C450 500 575 390 720 310 C845 240 995 220 1160 250" fill="none" stroke="#dfb85a" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <path d="M720 310 C745 410 790 505 880 610" fill="none" stroke="#82b6bf" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif" fill="#f1f0e8">
+    <text x="250" y="100" font-size="34" font-weight="700">Sellia, Town of Sorcery</text>
+    <text x="310" y="700" font-size="25">Enter from south</text>
+  </g>
+  <g fill="#30353c" stroke="#dfb85a" stroke-width="5">
+    <rect x="485" y="435" width="82" height="135"/>
+    <rect x="705" y="250" width="82" height="135"/>
+    <rect x="1010" y="205" width="82" height="135"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="24" fill="#f1f0e8">
+    <text x="455" y="420">Tower A</text>
+    <text x="675" y="235">Tower B</text>
+    <text x="980" y="190">Tower C</text>
+  </g>
+  <g>
+    <circle cx="340" cy="640" r="26" fill="#dfb85a" stroke="#17130b" stroke-width="6"/>
+    <text x="340" y="652" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#17130b">1</text>
+  </g>
+  <g>
+    <circle cx="720" cy="310" r="26" fill="#dfb85a" stroke="#17130b" stroke-width="6"/>
+    <text x="720" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#17130b">2</text>
+    <text x="745" y="428" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Light towers to break seals</text>
+  </g>
+  <g>
+    <circle cx="880" cy="610" r="26" fill="#82b6bf" stroke="#102124" stroke-width="6"/>
+    <text x="880" y="622" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#102124">3</text>
+    <text x="910" y="650" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Night Comet chest</text>
+  </g>
+  <g>
+    <circle cx="1160" cy="250" r="26" fill="#82b6bf" stroke="#102124" stroke-width="6"/>
+    <text x="1160" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#102124">4</text>
+    <text x="1190" y="285" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Staff of Loss rooftop</text>
+  </g>
+  <text x="80" y="858" font-family="Arial, sans-serif" font-size="24" fill="#c4c3b5">Marked route: enter, light towers, collect Night Comet and Staff of Loss.</text>
+</svg>
+

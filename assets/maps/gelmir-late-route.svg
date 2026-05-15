@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Stylized marked late-game route through Mt Gelmir">
+  <rect width="1600" height="900" fill="#151211"/>
+  <path d="M120 730 C290 545 420 420 510 250 C700 120 960 105 1250 230 C1360 420 1430 575 1480 735 C1020 805 575 805 120 730 Z" fill="#4b3b32" stroke="#bb7f39" stroke-width="4"/>
+  <path d="M300 695 C520 620 670 505 810 360 C920 250 1040 230 1230 250" fill="none" stroke="#dfb85a" stroke-width="10" stroke-linecap="round" stroke-dasharray="24 18"/>
+  <path d="M810 360 C765 455 780 570 860 665" fill="none" stroke="#82b6bf" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif" fill="#f1f0e8">
+    <text x="170" y="118" font-size="34" font-weight="700">Mt. Gelmir late spike</text>
+    <text x="1170" y="300" font-size="25">Primeval Sorcerer Azur</text>
+    <text x="890" y="705" font-size="25">Minor Erdtree</text>
+  </g>
+  <g>
+    <circle cx="300" cy="695" r="26" fill="#dfb85a" stroke="#17130b" stroke-width="6"/>
+    <text x="300" y="707" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#17130b">1</text>
+    <text x="225" y="660" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Arrive in Gelmir</text>
+  </g>
+  <g>
+    <circle cx="1230" cy="250" r="26" fill="#dfb85a" stroke="#17130b" stroke-width="6"/>
+    <text x="1230" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#17130b">2</text>
+  </g>
+  <g>
+    <circle cx="860" cy="665" r="26" fill="#82b6bf" stroke="#102124" stroke-width="6"/>
+    <text x="860" y="677" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#102124">3</text>
+    <text x="725" y="628" font-family="Arial, sans-serif" font-size="25" fill="#f1f0e8">Cerulean Hidden Tear</text>
+  </g>
+  <text x="80" y="858" font-family="Arial, sans-serif" font-size="24" fill="#c4c3b5">Optional route: Comet Azur plus Cerulean Hidden Tear for boss-opening setups.</text>
+</svg>
+

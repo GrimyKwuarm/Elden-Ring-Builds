@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Stylized starfall landscape with glintstone route marks">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#182018"/>
+      <stop offset="0.45" stop-color="#243225"/>
+      <stop offset="1" stop-color="#694f2e"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="72%" cy="18%" r="24%">
+      <stop offset="0" stop-color="#f4dc8d" stop-opacity="0.9"/>
+      <stop offset="0.3" stop-color="#dfb85a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#dfb85a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#moon)"/>
+  <path d="M0 650 C210 560 330 630 520 560 C720 485 890 610 1090 520 C1300 430 1440 520 1600 455 L1600 900 L0 900 Z" fill="#171c16"/>
+  <path d="M0 735 C250 650 430 730 650 660 C880 585 1070 720 1290 640 C1420 592 1510 620 1600 575 L1600 900 L0 900 Z" fill="#10130f"/>
+  <path d="M154 696 C344 602 478 592 642 630 C800 666 934 610 1080 524" fill="none" stroke="#dfb85a" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <g fill="#82b6bf">
+    <circle cx="154" cy="696" r="10"/>
+    <circle cx="642" cy="630" r="10"/>
+    <circle cx="1080" cy="524" r="10"/>
+  </g>
+  <g fill="#f1f0e8" opacity="0.9">
+    <circle cx="270" cy="120" r="3"/>
+    <circle cx="430" cy="180" r="2"/>
+    <circle cx="610" cy="90" r="3"/>
+    <circle cx="840" cy="170" r="2"/>
+    <circle cx="1010" cy="92" r="3"/>
+    <circle cx="1250" cy="150" r="2"/>
+  </g>
+</svg>
+
