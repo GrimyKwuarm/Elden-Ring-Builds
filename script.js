@@ -12,8 +12,12 @@
   const atlasTitle = document.getElementById("atlasTitle");
   const atlasBody = document.getElementById("atlasBody");
   const atlasLink = document.getElementById("atlasLink");
+  const atlasMapLink = document.getElementById("atlasMapLink");
+  const copyMapSearch = document.getElementById("copyMapSearch");
   const copyLink = document.getElementById("copyLink");
   const storageKey = "starfall-spellblade-progress";
+  const mapUrl = "https://eldenring.wiki.fextralife.com/Interactive+Map";
+  let currentMapSearch = "Elden Ring mage build";
   const kindLabels = {
     flask: "Flask upgrade",
     farm: "Rune farm",
@@ -89,6 +93,9 @@
       atlasBody.textContent = marker.dataset.body;
       atlasLink.href = marker.dataset.link;
       atlasLink.textContent = "Open reference";
+      atlasMapLink.href = mapUrl;
+      currentMapSearch = marker.dataset.search || marker.dataset.title;
+      copyMapSearch.textContent = `Copy "${currentMapSearch}"`;
     });
   });
 
@@ -113,6 +120,20 @@
       }
       window.setTimeout(() => {
         copyLink.textContent = "Copy guide link";
+      }, 1800);
+    });
+  }
+
+  if (copyMapSearch) {
+    copyMapSearch.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(currentMapSearch);
+        copyMapSearch.textContent = "Search copied";
+      } catch (error) {
+        copyMapSearch.textContent = currentMapSearch;
+      }
+      window.setTimeout(() => {
+        copyMapSearch.textContent = `Copy "${currentMapSearch}"`;
       }, 1800);
     });
   }

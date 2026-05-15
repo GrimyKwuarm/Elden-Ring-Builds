@@ -10,6 +10,7 @@
 - Verified the public Pages URL returns the Starfall Spellblade guide.
 - Added an explicit GitHub Actions Pages deployment workflow to publish the static site from the repository root.
 - Expanded the guide with an interactive atlas, flask sweep, farming ladder, detours, boss tactics, backup gear, and a level-by-level stat plan.
+- Added a live Fextralife map launcher. Direct embedding is blocked by Fextralife's same-origin frame policy, so the guide opens the real map in a new tab and provides copyable marker search terms.
 
 ## Current State
 - Static site is ready for local viewing through `index.html`.

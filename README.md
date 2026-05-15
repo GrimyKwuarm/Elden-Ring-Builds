@@ -12,6 +12,7 @@ The page includes:
 - Checkboxes that save progress in the browser.
 - Original marked route maps.
 - Interactive atlas for flask upgrades, rune farms, dungeon detours, boss tactics, and backup gear.
+- Live Fextralife interactive map launcher with copyable marker search terms.
 - Level-by-level stat plan from Astrologer start to level 125.
 - Wiki links for item verification.
 - A share button and GitHub Pages publishing instructions.

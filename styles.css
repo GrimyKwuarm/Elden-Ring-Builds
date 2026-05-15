@@ -342,6 +342,25 @@ footer p {
   border-top: 1px solid var(--line);
 }
 
+.live-map-callout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 18px;
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--gold);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.live-map-callout p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
 .atlas-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
@@ -434,15 +453,27 @@ footer p {
   color: var(--muted);
 }
 
-.atlas-card a {
+.atlas-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.atlas-card a,
+.atlas-card button {
   display: inline-flex;
   min-height: 38px;
   align-items: center;
-  margin-top: 10px;
   padding: 7px 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #111611;
+  color: var(--sky);
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .deep-lists,
@@ -559,7 +590,8 @@ footer {
   .topbar,
   .overview,
   .controls,
-  .publish {
+  .publish,
+  .live-map-callout {
     grid-template-columns: 1fr;
   }
 

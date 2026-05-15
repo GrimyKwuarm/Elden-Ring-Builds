@@ -7,6 +7,7 @@
 - Switch map tabs.
 - Use atlas category filters.
 - Click several atlas markers and confirm the detail card updates.
+- Confirm atlas markers update the copyable Fextralife map search term.
 - Click source links and confirm they open relevant pages.
 - Resize to a narrow mobile width and confirm content stays readable.
 

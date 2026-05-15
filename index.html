@@ -333,7 +333,14 @@
         <div class="section-heading">
           <p class="section-kicker">Marked maps</p>
           <h2 id="maps-heading">Where to go</h2>
-          <p>These are original route maps with marked objectives. Use the linked wiki pages when you need exact in-game geometry.</p>
+          <p>These are original route maps with marked objectives. For the actual pan-and-zoom Elden Ring map, use the Fextralife live map launcher below.</p>
+        </div>
+        <div class="live-map-callout">
+          <div>
+            <h3>Use the actual Fextralife interactive map</h3>
+            <p>Fextralife blocks cross-site embedding, so the guide opens their live map in a new tab. Pick any atlas marker below, copy its search term, then paste it into the Fextralife map search.</p>
+          </div>
+          <a class="button primary" href="https://eldenring.wiki.fextralife.com/Interactive+Map" target="_blank" rel="noreferrer">Open Fextralife map</a>
         </div>
         <div class="map-tabs" role="tablist" aria-label="Route maps">
           <button class="map-tab active" type="button" role="tab" aria-selected="true" aria-controls="map-caelid" data-map="map-caelid">Early power</button>
@@ -422,7 +429,11 @@
             <p class="section-kicker" id="atlasKind">Pick a marker</p>
             <h3 id="atlasTitle">Click anything on the atlas</h3>
             <p id="atlasBody">Markers are grouped by flasks, rune farms, dungeons, boss tactics, and backup gear. Your selected marker details will appear here.</p>
-            <a id="atlasLink" href="https://eldenring.wiki.fextralife.com/Elden+Ring+Wiki" target="_blank" rel="noreferrer">Open reference</a>
+            <div class="atlas-actions">
+              <a id="atlasLink" href="https://eldenring.wiki.fextralife.com/Elden+Ring+Wiki" target="_blank" rel="noreferrer">Open reference</a>
+              <a id="atlasMapLink" href="https://eldenring.wiki.fextralife.com/Interactive+Map" target="_blank" rel="noreferrer">Open live map</a>
+              <button id="copyMapSearch" type="button">Copy map search</button>
+            </div>
           </aside>
         </div>
 
